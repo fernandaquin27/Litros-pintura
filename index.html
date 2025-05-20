@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Manos de Pintura</title>
+</head>
+
+<body>
+  <details>
+    <section>
+    <summary>Enunciado: Calcular litros de pintura</summary>
+    <p>Escribe un programa JavaScript que calcule los litros de pintura necesarios para pintar una pared rectangular.
+    </p>
+    <p>Un litro de pintura cubre aproximadamente, 12m<sup>2</sup> en una sola mano.</p>
+    <p>Crea una constante llamada <b><mark>COBERTURA</mark></b> para guardar los datos de cobertura de la pintura: (<b>12</b>m<sup>2</sup>)</p>
+    <p>Tienes un formulario para preguntar al usuario:</p>
+    <ul type="circle">
+      <li>El alto de la pared </li>
+      <li>El ancho de la pared</li>
+      <li>El número de manos a aplicar</li>
+    </ul>
+    <p>Calcula en una función a la cual llamarás <b><mark>CalcularLitros()</mark></b> los litros de pintura necesarios.</p>
+    <p>Muestra en pantalla en el párrafo llamado <b><mark>respuesta</mark></b> los litros de pintura que se deben comprar.</p>
+    <p>Agregar más estilos CSS a este documento para que no pierdas la práctica.</p>
+  </details>
+  <h1>Calcular litros de Pintura</h1>
+  <p>
+    <label for="alto">Alto de la pared:</label>
+    <input type="number" id="alto">
+  </p>
+  <p>
+    <label for="ancho">Ancho de la pared:</label>
+    <input type="number" id="ancho">
+  </p>
+  <p>
+    <label for="manos">Número de manos a aplicar:</label>
+    <input type="number" id="manos" />
+  </p>
+  <p><button type='button'onclick="calcularLitros()">Calcular</button></p>
+  <p id="resultado"></p>
+  </section>
+
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>
